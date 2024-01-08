@@ -1,0 +1,30 @@
+Model: Net(
+  (conv1): Conv2d(3, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+  (pool1): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+  (conv2): Conv2d(128, 64, kernel_size=(2, 2), stride=(1, 1), padding=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=1, dilation=1, ceil_mode=False)
+  (fc1): Linear(in_features=207936, out_features=3, bias=True)
+)
+Batch size: 16
+Epochs: 16
+Optimizer: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)
+Criterion: CrossEntropyLoss()
+Device: cuda:0
+Accuracy: 93 %
+RootDir: .\Potato Train Augmentation
+
+Accuracy early: 0.95000 %
+Accuracy late: 0.94000 %
+Accuracy heal: 0.76667 %
